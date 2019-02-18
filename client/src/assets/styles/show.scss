@@ -1,0 +1,338 @@
+    input{
+        max-height:2rem;
+    }
+    .totalsMargin{
+        margin-top:3.35rem !important;
+    } 
+    .subTotalsMargin{
+        margin-bottom: 0.51rem;
+    }
+  @media screen and (max-width: 1500px){
+    .totalsMargin{
+        margin-top:3.35rem !important;
+    }  
+  }
+  @media screen and (max-width: 1200px){
+    input{
+        font-size:0.9rem !important;
+    } 
+    .subTotalsMargin{
+        margin-bottom: 0.51rem !important;
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    .divPersonalDisplayMedia{
+      padding-left:0rem;
+    }
+    .divPersonalDisplayMedia2{
+      padding-left:0rem;
+    }
+    .inputDisplayMedia{
+      min-width:2rem;
+      padding:0rem;
+      font-size:0.9rem;
+    }
+    .liAbilities{
+      padding-bottom:0.5rem !important;
+    }
+    .liSavingThrows{
+      padding:0.32rem 0 !important;
+    }
+    .divDisplayMedia{
+      min-width:2rem;
+      padding:0rem 0.4rem !important;
+    }
+    .totalsMargin{
+        margin-top:2.86rem !important;
+    }
+    .divDisplayMedia2{
+      padding-right:0.1rem;
+      padding-left:0.1rem;
+    }
+    .divDisplayMediaTotal{
+      padding:0rem 0.4rem !important;
+    }
+    .smallDisplayMedia{
+      font-size:0.65rem;
+    }
+    small{
+      font-size:0.67rem;
+    }
+    select.inputStyle1.inputDisplayMedia{
+      max-width:3.5rem;
+    }
+    .input,.custom-select{
+      font-size: 0.85rem !important;
+    }
+    .personalInput{
+      font-size: 0.85rem !important;
+    }
+    .skillNameInput{
+      font-size:0.67rem !important;
+    }
+    .smallDisplayMedia2{
+      font-size:0.6rem;
+      margin-bottom: 0rem !important;
+    }
+    .h6DisplayMedia{
+      font-size: 0.8rem;
+      margin-bottom: 0.2rem;
+      padding:0rem;
+      max-height:2rem;
+    }
+    .liDisplayMedia{
+      padding-bottom: 0.15rem !important;
+    }
+    .liBaseAtt2{
+      padding-bottom:0.4rem !important;
+    }
+    .ulMiscGrapple{
+      margin-top:6.05rem !important;
+    }
+    .baseAttDisplayMedia{
+      padding-bottom:0.8rem ;
+      padding-top:0.8rem ;
+      font-size: 0.7rem;
+    }
+    .spellResDisplayMedia{
+      padding-top:0.7rem ;
+      padding-bottom:0.9rem ;
+      margin-top:0.9rem;
+      font-size: 0.7rem;
+    } 
+    .grappleDisplayMedia{
+      padding-bottom:1.1rem ;
+      padding-top:1.1rem ;
+      margin-top:0.9rem;
+      font-size: 0.7rem;
+    }
+    .inputStyle4{
+      max-height:2rem;
+      padding:0px
+    }
+    .inputStyle5{
+      max-width:4.5rem !important;
+    }
+    .inputSkills{
+      font-size: 0.85rem !important;
+    }
+    .keyAbilityPadding{
+      padding:0rem;
+      padding-right:0.3rem;
+    }
+    .skillsWidth{
+      font-size: 0.7rem !important;
+    }
+    button{
+      padding-top:0.2rem;
+      padding-bottom:0.2rem;
+    }
+    .alert{
+      font-size: 0.9rem;
+    }
+    .btn{
+      font-size: 0.85rem;
+    }
+    .featsStyle2{
+      font-size: 0.95rem;
+    }
+    p{
+      font-size: 0.9rem;
+    }
+    h4{
+      font-size: 1.3rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .divPersonalDisplayMedia{
+      padding-right:0.1rem !important;
+      padding-left:0.1rem !important;
+      max-width:auto;
+    }
+    .divPersonalDisplayMedia2{
+      padding-right:0.2rem;
+    }
+    .smallDisplayMedia{
+      font-size:0.55rem;
+    }
+    small{
+      font-size:0.6rem;
+    }
+    select{
+      font-size: 0.8rem !important;
+      padding-left: 0rem !important;
+    }
+    select.inputStyle1.inputDisplayMedia{
+      max-width:3.5rem;
+    }
+    .input,.custom-select{
+      font-size: 0.8rem !important;
+    }
+    .personalInput{
+      font-size: 0.8rem !important;
+    }
+    .divDisplayMedia2{
+        max-width:5rem;
+    }
+    .divDisplayMedia{
+        max-width:8rem;
+        // padding:0rem 0.2rem !important;
+    }
+    .divDisplayMediaTotal{
+      max-width:4rem;
+      margin-right:1rem;
+    }
+    .totalsMargin{
+        margin-top:2.4rem !important;
+    }
+    .subTotalsMargin{
+        margin-bottom:0.4rem !important;
+    }
+    .inputDisplayMedia{
+      padding:0rem;
+      font-size:0.8rem !important;
+    }
+    .h6DisplayMedia{
+      font-size: 0.7rem;
+      max-height: 2rem; 
+    }
+    .inputStyle2{
+      font-size: 0.75rem !important;
+      max-height: 2rem;
+    }
+    .inputStyle3{
+      font-size: 0.75rem !important;
+    }
+    .inputStyle5{
+      max-width:3.6rem !important;
+    }
+    .liBaseAtt2{
+      padding-bottom: 0.55rem !important;
+    }
+    .ulMiscGrapple{
+      margin-top:6.3rem !important;
+    } 
+    .inputSkills{
+      font-size: 0.8rem !important;
+    }
+    .keyAbilityPadding{
+      padding-right:0.3rem;
+    }
+    .skillsWidth{
+      max-width:3.6rem !important;
+      font-size:0.67rem !important;
+    }
+    .liAbilities{
+      margin-top:0.1rem;
+      padding-bottom:0.53rem !important;
+    }
+    .liSavingThrows{
+      padding-bottom:0.42rem !important;
+    }
+    .liSaves{
+      margin-bottom: 0.7rem;
+    }
+    .liBaseAtt{
+      margin-bottom: 0.85rem;
+    }
+    .btn{
+      font-size: 0.8rem;
+    }
+    .alert{
+      font-size: 0.8rem;
+    }
+    .featsStyle2{
+      font-size: 0.9rem;
+    }
+    p{
+      font-size: 0.85rem;
+    }
+    h4{
+      font-size: 1.25rem;
+    }
+  
+  }
+  @media screen and (max-width: 576px) {
+    .divPersonalDisplayMedia{ 
+      min-width:3.2rem !important
+    }
+    .divPersonalDisplayMedia2{
+      min-width:3.2rem !important
+    }
+    select{
+      font-size: 0.7rem !important;
+      padding: 0rem !important;
+    }
+    .input,.custom-select{
+      font-size: 0.75rem !important;
+    }
+    .personalInput{
+      font-size: 0.75rem !important;
+      min-width: 3.2rem !important;
+    }
+    .smallDisplayMedia{
+      font-size: 0.5rem !important;
+    }
+    .divDisplayMedia{
+      max-width:7rem;
+    }
+    .totalsMargin{
+      margin-top:2.32rem !important;
+    }
+    .subTotalsMargin{
+      margin-bottom:0.304rem !important;
+    }
+    .divDisplayMedia2{
+      max-width:5rem;
+    }
+    .liSavingThrows{
+      padding-bottom:0.34rem !important;
+    }
+    .liAbilities{
+      padding-bottom:0.32rem !important;
+    }
+    .liBaseAtt2{
+      padding-bottom: 0.59rem !important;
+    }
+    select.inputStyle1.inputDisplayMedia{
+      max-width:3rem;
+    }
+    small{
+      font-size: 0.55rem !important;
+    }
+    .inputStyle3{
+      font-size: 0.67rem !important;
+    }
+    .inputStyle5{
+      max-width:4.5rem !important;
+    }
+    h6{
+      font-size:0.7rem;
+    }
+    .ulMiscGrapple{
+      margin-top: 6.43rem !important;
+    }
+    .skillsWidth{
+      font-size: 0.5rem !important;
+    }
+    .skillNameInput{
+      min-width:2rem;
+      max-width: 3.5rem;
+      font-size: 0.65rem !important;
+    }
+    small input.input1.skillNameInput{
+      font-size: 0.55rem !important;
+    }
+    .keyAbilityPadding{
+      padding:0rem;
+    }
+    .inputSkills{
+      min-width: 2.5rem !important;
+    }
+    .divSkillsPadding{
+      padding:0rem !important;
+    }
+
+ }   

@@ -1,0 +1,571 @@
+@mixin Style1{
+  background: -moz-linear-gradient(45deg, #c19e67 0%, #c19e67 20%, #e9d4b3 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #c19e67), color-stop(20%, #c19e67), color-stop(100%, #e9d4b3));
+  background: -webkit-linear-gradient(45deg, #c19e67 0%, #c19e67 20%, #e9d4b3 100%);
+  background: -o-linear-gradient(45deg, #c19e67 0%, #c19e67 20%, #e9d4b3 100%);
+  background: -ms-linear-gradient(45deg, #c19e67 0%, #c19e67 20%, #e9d4b3 100%);
+  background: linear-gradient(45deg, #c19e67 0%, #c19e67 20%, #e9d4b3 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c19e67', endColorstr='#e9d4b3', GradientType=1 );
+}
+@mixin Style2{
+  background: rgba(199,109,0,1);
+  background: -moz-linear-gradient(top, rgba(199,109,0,1) 0%, rgba(158,87,0,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(199,109,0,1)), color-stop(100%, rgba(158,87,0,1)));
+  background: -webkit-linear-gradient(top, rgba(199,109,0,1) 0%, rgba(158,87,0,1) 100%);
+  background: -o-linear-gradient(top, rgba(199,109,0,1) 0%, rgba(158,87,0,1) 100%);
+  background: -ms-linear-gradient(top, rgba(199,109,0,1) 0%, rgba(158,87,0,1) 100%);
+  background: linear-gradient(to bottom, rgba(199,109,0,1) 0%, rgba(158,87,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c76d00', endColorstr='#9e5700', GradientType=0 );
+}
+@mixin inputSpinnersHide{
+  // Webkit:
+  // Hide number picker
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  // Firefox:
+  // Hide number picker
+  input[type=number] {
+    -moz-appearance:textfield;
+  }
+}
+@mixin inputSpinnersShow{
+  // Show number picker on focus
+  input[type=number]:focus::-webkit-inner-spin-button,
+  input[type=number]:focus::-webkit-outer-spin-button,
+  input[type=number]:hover::-webkit-inner-spin-button,
+  input[type=number]:hover::-webkit-outer-spin-button {
+    -webkit-appearance: inner-spin-button;
+    margin: 0 2px 0 0 ;
+  }
+  // Show number picker on focus
+  input[type=number]:focus,
+  input[type=number]:hover {
+    -moz-appearance:number-input;
+  }
+}
+.spinnersOff{
+  @include inputSpinnersHide;
+}
+.spinnersOn{
+  @include inputSpinnersShow;
+}
+ul{
+  list-style:none;
+  padding:0px
+}
+.input1,select{
+  border: 0px;
+  border-bottom:1px solid black;
+  padding:0px;
+  border-radius: 0px;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-align: center;
+  font-weight:700;
+}
+.input1{
+    font-size: inherit !important;
+}
+select {
+  text-align-last:center;
+ }
+
+input{
+  text-align: center;
+  min-width:4.5rem;
+  text-transform:capitalize;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1rem;
+}
+button{
+  font-weight:600;
+}
+h6{
+  font-weight:700;
+  font-size: 0.8rem;
+  margin-top:0.4rem;
+  margin-bottom:0.7rem;
+}
+h5{
+  color:white;
+}
+.h6DisplayMedia{
+  color:white;
+}
+small{
+  font-weight:700;
+  font-size: 0.8rem;
+}
+.smallDisplayMedia{
+color:#fffefefa !important;
+}
+.smallWidth{
+  min-width: 4.5rem;
+}
+.liAbilities{
+  padding-bottom:0.51rem !important;
+}
+.skillNameInput{
+  font-size: 0.8rem;
+  font-weight:700;
+  max-width:5.5rem; 
+  border-bottom:0.02px solid black; 
+  text-transform:uppercase;
+  color:black;
+  background: transparent !important;
+  @include Style1;
+}
+.inputStyle1{
+  @include Style2;
+  color:white; 
+  box-shadow:inset 0px 0px 10px 1px #000000; 
+  border-radius:5%;
+}
+.inputStyle2{
+  @include Style1;
+  color:black; 
+  box-shadow:inset 0px 0px 5px 1px #000000; 
+  border-radius:5%;
+  border: 0px solid;
+  font-size: 0.95rem;
+}
+.inputStyle3{
+  @include Style2;
+  color:white; 
+  box-shadow:inset 0px 0px 10px 1px #000000;
+  border-radius:5%;
+  border:0px solid;
+}
+.inputStyle4{
+  @include Style1;
+  color:black; 
+  box-shadow:inset 0px 0px 2px 1px #000000;
+  border-radius:5%;
+  border:0px solid;
+}
+.inputStyle5{
+  @include Style1;
+  color:black; 
+  box-shadow:inset 0px 0px 2px 1px #000000; 
+  border-radius:5%;
+  max-width: 5rem !important;
+}
+.changeBackground{
+  @include Style2;
+}
+.inputSkills{
+  border:0px solid;
+  max-width:0.8rem !important;
+  min-width:3rem !important;
+  max-height:1rem !important;
+  font-size: 0.9rem !important;
+}
+.keyAbilityPadding{
+  padding:0rem 1rem;
+}
+.skillsWidth{
+    max-width:5rem;
+}
+.baseAttDisplayMedia{
+  padding-bottom:0.9rem ;
+  padding-top:0.9rem ;
+}
+.spellResDisplayMedia{
+  padding-top:0.7rem ;
+  padding-bottom:0.9rem ;
+  margin-top:0.7rem
+} 
+.grappleDisplayMedia{
+  padding-bottom:1.2rem ;
+  padding-top:1.2rem ;
+  margin-top:0.7rem;
+}
+.ulMiscGrapple{
+  margin-top:6.3rem;
+}
+.divDisplayMedia{
+  max-width:10rem;
+}
+.divDisplayMediaTotal{
+  max-width:10rem;
+}
+.inputDisplayMedia{
+  max-width: 4.5rem;
+  padding:0rem;
+}
+.featsStyle{
+  @include Style1;
+}
+span{
+  color:black;
+}
+a{
+  color:black;
+}
+
+@media screen and (max-width: 1200px) {
+  .divDisplayMedia2{
+    min-width:2rem;
+    padding-left:0.1rem !important;
+    padding-right:0.1rem !important;
+  }
+  .inputDisplayMedia{
+    max-width: 4.5rem;
+    padding:0rem;
+  }
+  input{
+    font-size: 0.95rem !important;
+  }
+  .input,.custom-select{
+    font-size: 0.95rem !important;
+  }
+  .skillNameInput{
+    font-size: 0.8rem !important ;
+  }
+  .liAbilities{
+    padding-bottom:0.51rem !important;
+  }
+  .inputStyle5{
+    max-width:4.7rem !important;
+  }
+  .inputSkills{
+    font-size: 0.85rem !important;
+  }
+  .keyAbilityPadding{
+    padding:0rem 0.5rem;
+  }
+  .skillsWidth{
+    font-size: 0.7rem !important;
+  }
+  .btn{
+    font-size: 0.9rem;
+  }
+  p{
+    font-size: 0.95rem;
+  }
+  h4{
+    font-size: 1.35rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .divPersonalDisplayMedia{
+    padding-left:0rem;
+  }
+  .divPersonalDisplayMedia2{
+    padding-left:0rem;
+  }
+  .inputDisplayMedia{
+    min-width:2rem;
+    padding:0rem;
+    font-size:0.9rem;
+  }
+  .liAbilities{
+    padding-bottom:0.5rem !important;
+  }
+  .liSavingThrows{
+    padding:0.32rem 0 !important;
+  }
+  .divDisplayMedia{
+    min-width:2rem;
+    padding:0rem;
+    padding-right:0.1rem !important;
+  }
+  .divDisplayMedia2{
+    padding-right:0.1rem;
+    padding-left:0.1rem;
+  }
+  .divDisplayMediaTotal{
+    padding:0rem 0.4rem !important;
+  }
+  .smallDisplayMedia{
+    font-size:0.65rem;
+  }
+  small{
+    font-size:0.67rem;
+  }
+  select.inputStyle1.inputDisplayMedia{
+    max-width:3.5rem;
+  }
+  .input,.custom-select{
+    font-size: 0.85rem !important;
+  }
+  .personalInput{
+    font-size: 0.85rem !important;
+  }
+  .skillNameInput{
+    font-size:0.67rem !important;
+  }
+  .smallDisplayMedia2{
+    font-size:0.6rem;
+    margin-bottom: 0rem !important;
+  }
+  .h6DisplayMedia{
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+    padding:0rem;
+  }
+  .liDisplayMedia{
+    padding-bottom: 0.15rem !important;
+  }
+  .liBaseAtt2{
+    padding-bottom:0.4rem !important;
+  }
+  .ulMiscGrapple{
+    margin-top:6.05rem !important;
+  }
+  .baseAttDisplayMedia{
+    padding-bottom:0.8rem ;
+    padding-top:0.8rem ;
+    font-size: 0.7rem;
+  }
+  .spellResDisplayMedia{
+    padding-top:0.7rem ;
+    padding-bottom:0.9rem ;
+    margin-top:0.9rem;
+    font-size: 0.7rem;
+  } 
+  .grappleDisplayMedia{
+    padding-bottom:1.1rem ;
+    padding-top:1.1rem ;
+    margin-top:0.9rem;
+    font-size: 0.7rem;
+  }
+  .inputStyle4{
+    max-height:2rem;
+    padding:0px
+  }
+  .inputStyle5{
+    max-width:4.5rem !important;
+  }
+  .inputSkills{
+    font-size: 0.85rem !important;
+  }
+  .keyAbilityPadding{
+    padding:0rem;
+    padding-right:0.3rem;
+  }
+  .skillsWidth{
+    font-size: 0.7rem !important;
+  }
+  button{
+    padding-top:0.2rem;
+    padding-bottom:0.2rem;
+  }
+  .alert{
+    font-size: 0.9rem;
+  }
+  .btn{
+    font-size: 0.85rem;
+  }
+  .featsStyle2{
+    font-size: 0.95rem;
+  }
+  p{
+    font-size: 0.9rem;
+  }
+  h4{
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .divPersonalDisplayMedia{
+    padding-right:0.1rem !important;
+    padding-left:0.1rem !important;
+    max-width:auto;
+  }
+  .divPersonalDisplayMedia2{
+    padding-right:0.2rem;
+  }
+  .smallDisplayMedia{
+    font-size:0.55rem;
+  }
+  small{
+    font-size:0.6rem;
+  }
+  select{
+    font-size: 0.8rem !important;
+    padding-left: 0rem !important;
+  }
+  select.inputStyle1.inputDisplayMedia{
+    max-width:3.5rem;
+  }
+  .input,.custom-select{
+    font-size: 0.8rem !important;
+  }
+  .personalInput{
+    font-size: 0.8rem !important;
+  }
+  .divDisplayMedia2{
+    padding-right:0.1rem;
+    padding-left:0.1rem;
+    max-width:3.5rem;
+    min-width: 3.3rem;
+  }
+  .divDisplayMediaTotal{
+    max-width:4rem;
+    margin-right:1rem;
+  }
+  .inputDisplayMedia{
+    padding:0rem;
+    font-size:0.8rem !important;
+  }
+  .h6DisplayMedia{
+    font-size: 0.7rem;
+    max-height: 2rem; 
+  }
+  .inputStyle2{
+    font-size: 0.75rem !important;
+    max-height: 2rem;
+  }
+  .inputStyle3{
+    font-size: 0.75rem !important;
+  }
+  .inputStyle5{
+    max-width:3.6rem !important;
+  }
+  .liBaseAtt2{
+    padding-bottom: 0.55rem !important;
+  }
+  .ulMiscGrapple{
+    margin-top:6.3rem !important;
+  } 
+  .inputSkills{
+    font-size: 0.8rem !important;
+  }
+  .keyAbilityPadding{
+    padding-right:0.3rem;
+  }
+  .skillsWidth{
+    max-width:3.6rem !important;
+    font-size:0.67rem !important;
+  }
+  .liAbilities{
+    margin-top:0.1rem;
+    padding-bottom:0.53rem !important;
+  }
+  .liSavingThrows{
+    padding-bottom:0.42rem !important;
+  }
+  .liSaves{
+    margin-bottom: 0.7rem;
+  }
+  .liBaseAtt{
+    margin-bottom: 0.85rem;
+  }
+  .btn{
+    font-size: 0.8rem;
+  }
+  .alert{
+    font-size: 0.8rem;
+  }
+  .featsStyle2{
+    font-size: 0.9rem;
+  }
+  p{
+    font-size: 0.85rem;
+  }
+  h4{
+    font-size: 1.25rem;
+  }
+
+}
+@media screen and (max-width: 576px) {
+  .divPersonalDisplayMedia{ 
+    min-width:3.2rem !important
+  }
+  .divPersonalDisplayMedia2{
+    min-width:3.2rem !important
+  }
+  select{
+    font-size: 0.7rem !important;
+    padding: 0rem !important;
+  }
+  .input,.custom-select{
+    font-size: 0.75rem !important;
+  }
+  .personalInput{
+    font-size: 0.75rem !important;
+    min-width: 3.2rem !important;
+  }
+  .smallDisplayMedia{
+    font-size: 0.5rem !important;
+  }
+  .divDisplayMedia{
+    min-width:5rem;
+  }
+  .divDisplayMedia2{
+    max-width:3rem;
+  }
+  .liSavingThrows{
+    padding-bottom:0.34rem !important;
+  }
+  .liAbilities{
+    padding-bottom:0.42rem !important;
+  }
+  .liBaseAtt2{
+    padding-bottom: 0.59rem !important;
+  }
+  select.inputStyle1.inputDisplayMedia{
+    max-width:3rem;
+  }
+  small{
+    font-size: 0.6rem !important;
+  }
+  .inputStyle3{
+    font-size: 0.7rem !important;
+  }
+  .inputStyle5{
+    max-width:4.5rem !important;
+  }
+  h6{
+    font-size:0.7rem;
+  }
+  .ulMiscGrapple{
+    margin-top: 6.43rem !important;
+  }
+  .skillsWidth{
+    font-size: 0.5rem !important;
+  }
+  .skillNameInput{
+    min-width:2rem;
+    max-width: 3.5rem;
+    font-size: 0.75rem !important;
+  }
+  small input.input1.skillNameInput{
+    font-size: 0.58rem !important;
+  }
+  .keyAbilityPadding{
+    padding:0rem;
+  }
+  .inputSkills{
+    min-width: 2.5rem !important;
+  }
+  .divSkillsPadding{
+    padding:0rem !important;
+  }
+  h5{
+    font-size: 1rem;
+  }
+  .btn{
+    font-size: 0.7rem;
+  }
+  .alert{
+    font-size: 0.75rem;
+  }
+  .featsStyle2{
+    font-size: 0.85rem;
+  }
+  p{
+    font-size: 0.8rem;
+  }
+  h4{
+    font-size: 1.2rem;
+  }
+}
