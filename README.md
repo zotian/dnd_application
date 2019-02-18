@@ -17,5 +17,5 @@ MEVN stack
   <li>run <strong>npm run dev </strong></li>
 </ol>
 
-<h3> Make sure to go to <strong> /client/src/components/Header.vue </strong> and change the <strong> const API_URL </strong>
-to listen on your server </h3>
+<p> ***Make sure to go to <strong> /client/src/components/Header.vue </strong> and change the <strong> const API_URL </strong>
+to listen on your server ***</p>
