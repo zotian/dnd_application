@@ -7,7 +7,7 @@ MEVN stack (Mongo, Express, Vue, Node)
 </ol>
 <h4>***To run the client.***</h4>
 <ol>
-  <li>run <strong>npm run serve on client foler</strong>
+  <li><strong>npm run serve on client foler</strong>
 </ol>
 <h4>***To run the server.***</h4>
 <ol>
