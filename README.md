@@ -1,5 +1,5 @@
 # dnd_application
-MEVN stack
+MEVN stack (Mongo, Express, Vue, Node)
 
 <h4>***To install dependencies.***</h4>
 <ol>
